@@ -492,6 +492,11 @@ as above:
 <Response [200 OK]>
 ```
 
+!!! note
+    The `Authorization` header is stripped when a request is redirected to a
+    different origin. The only exception is a redirect from HTTP to HTTPS on
+    the same host, where the header is kept.
+
 ## Exceptions
 
 HTTPX will raise exceptions if an error occurs.
